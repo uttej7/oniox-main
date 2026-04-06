@@ -1,0 +1,51 @@
+[
+  {
+    "id": "hr-dashboard",
+    "label": "Dashboard",
+    "icon": "LayoutDashboard",
+    "path": "/hr/dashboard",
+    "badge": null,
+    "children": []
+  },
+  {
+    "id": "hr-module",
+    "label": "HR",
+    "icon": "Users",
+    "path": "/hr/members",
+    "badge": null,
+    "children": [
+      {
+        "id": "hr-members",
+        "label": "HR Members",
+        "icon": "UserCheck",
+        "path": "/hr/members",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "old-hr-members",
+        "label": "Old HR Members",
+        "icon": "UserX",
+        "path": "/hr/old-members",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "hr-onboarding",
+    "label": "Employee OnBoarding",
+    "icon": "UserPlus",
+    "path": "/hr/employee-onboarding",
+    "badge": null,
+    "children": []
+  },
+  {
+    "id": "hr-offboarding",
+    "label": "Employee OffBoarding",
+    "icon": "UserMinus",
+    "path": "/hr/employee-offboarding",
+    "badge": null,
+    "children": []
+  }
+]
