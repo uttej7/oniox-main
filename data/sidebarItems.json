@@ -1,0 +1,240 @@
+[
+  {
+    "id": "dashboard",
+    "label": "Dashboard",
+    "icon": "LayoutDashboard",
+    "path": "/dashboard",
+    "badge": null,
+    "children": []
+  },
+  {
+    "id": "it",
+    "label": "IT",
+    "icon": "Monitor",
+    "path": "/it",
+    "badge": null,
+    "children": [
+      {
+        "id": "it-incidents",
+        "label": "Incidents",
+        "icon": "AlertTriangle",
+        "path": "/it/incidents",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "it-service-requests",
+        "label": "Service Requests",
+        "icon": "FileText",
+        "path": "/it/service-requests",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "it-catalog",
+        "label": "Catalog",
+        "icon": "BookOpen",
+        "path": "/it/catalog",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "it-assets",
+        "label": "IT Assets",
+        "icon": "Laptop",
+        "path": "/it/assets",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "employee",
+    "label": "Employee",
+    "icon": "Users",
+    "path": "/employee",
+    "badge": null,
+    "children": [
+      {
+        "id": "employee-list",
+        "label": "Employee List",
+        "icon": "List",
+        "path": "/employee/list",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "employee-directory",
+        "label": "Directory",
+        "icon": "BookUser",
+        "path": "/employee/directory",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "employee-departments",
+        "label": "Departments",
+        "icon": "Building",
+        "path": "/employee/departments",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "employee-center",
+    "label": "Employee Center",
+    "icon": "Building2",
+    "path": "/employee-center",
+    "badge": null,
+    "children": [
+      {
+        "id": "ec-my-requests",
+        "label": "My Requests",
+        "icon": "ClipboardList",
+        "path": "/employee-center/my-requests",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "ec-approvals",
+        "label": "Approvals",
+        "icon": "CheckSquare",
+        "path": "/employee-center/approvals",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "ec-knowledge-base",
+        "label": "Knowledge Base",
+        "icon": "BookMarked",
+        "path": "/employee-center/knowledge-base",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "vendors",
+    "label": "Vendors",
+    "icon": "Store",
+    "path": "/vendors",
+    "badge": null,
+    "children": [
+      {
+        "id": "vendor-management",
+        "label": "Vendor Management",
+        "icon": "Briefcase",
+        "path": "/vendors/management",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "vendor-assets",
+        "label": "Vendor Assets",
+        "icon": "Package",
+        "path": "/vendors/assets",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "assets-list",
+        "label": "Assets List",
+        "icon": "ListOrdered",
+        "path": "/vendors/assets-list",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "user-groups",
+    "label": "User Groups",
+    "icon": "UsersRound",
+    "path": "/user-groups",
+    "badge": null,
+    "children": [
+      {
+        "id": "groups-list",
+        "label": "Groups List",
+        "icon": "List",
+        "path": "/user-groups/list",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "groups-permissions",
+        "label": "Permissions",
+        "icon": "Shield",
+        "path": "/user-groups/permissions",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "groups-roles",
+        "label": "Roles",
+        "icon": "Lock",
+        "path": "/user-groups/roles",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "change-request",
+    "label": "Change Request",
+    "icon": "GitBranch",
+    "path": "/change-request",
+    "badge": null,
+    "children": [
+      {
+        "id": "cr-new",
+        "label": "New Request",
+        "icon": "Plus",
+        "path": "/change-request/new",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "cr-all",
+        "label": "All Requests",
+        "icon": "ClipboardList",
+        "path": "/change-request/all",
+        "badge": null,
+        "children": []
+      },
+      {
+        "id": "cr-calendar",
+        "label": "Change Calendar",
+        "icon": "Calendar",
+        "path": "/change-request/calendar",
+        "badge": null,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "employee-onboarding",
+    "label": "Employee OnBoarding",
+    "icon": "UserPlus",
+    "path": "/employee-onboarding",
+    "badge": null,
+    "children": []
+  },
+  {
+    "id": "employee-offboarding",
+    "label": "Employee OffBoarding",
+    "icon": "UserMinus",
+    "path": "/employee-offboarding",
+    "badge": null,
+    "children": []
+  },
+  {
+    "id": "problem-management",
+    "label": "Problem Management",
+    "icon": "AlertCircle",
+    "path": "/problem-management",
+    "badge": null,
+    "children": []
+  }
+]

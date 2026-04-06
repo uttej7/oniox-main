@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #02114f;
+    --primary-light: #0c2472;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8faff;
+  }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: rgba(2,17,79,0.15); border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(2,17,79,0.3); }
+}
+
+/* ── Custom animations ───────────────────────────────────────────────────── */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33%       { transform: translateY(-7px) rotate(3deg); }
+  66%       { transform: translateY(-4px) rotate(-2deg); }
+}
+
+@keyframes pulse-ring {
+  0%   { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(300%) rotate(25deg); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+
+@keyframes blob-move {
+  0%, 100% { transform: scale(1) translate(0, 0); }
+  33%       { transform: scale(1.08) translate(4px, -6px); }
+  66%       { transform: scale(0.95) translate(-4px, 4px); }
+}
+
+.animate-float        { animation: float 4s ease-in-out infinite; }
+.animate-pulse-ring   { animation: pulse-ring 2.2s ease-out infinite; }
+.animate-shimmer      { animation: shimmer 2.5s ease-in-out infinite; }
+.animate-spin-slow    { animation: spin-slow 8s linear infinite; }
+.animate-bounce-subtle{ animation: bounce-subtle 2s ease-in-out infinite; }
+.animate-blob         { animation: blob-move 7s ease-in-out infinite; }
+
+/* ── Reusable component classes ─────────────────────────────────────────── */
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-semibold px-5 py-2.5 rounded-xl
+           hover:bg-primary/90 active:scale-[0.98] transition-all duration-200 shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary font-semibold px-5 py-2.5 rounded-xl border
+           border-gray-200 hover:bg-gray-50 active:scale-[0.98] transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-gray-800
+           placeholder-gray-400 text-sm focus:outline-none focus:ring-2 focus:ring-primary/20
+           focus:border-primary focus:bg-white transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl border border-gray-100 shadow-card;
+  }
+}
